@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <!-- Cache prevent-->
+    <META HTTP-EQUIV="no-cache">
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="expires" CONTENT="19 Jan 1972 10:00:00 GMT">
+    <META HTTP-EQUIV="cache-control" CONTENT="no-store, no-cache, must-revalidate">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Stockspots">
+    <meta name="description" content="Stockspots warehouse tasks">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
+    <title>My Page</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Core Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="Theme/kendo.material-v2.min.css" />
+ 
+    <link rel="stylesheet" href="css/main.css" />
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-white bg-white" style="position:unset; z-index: 1000;">
+        <div class="container">
+            <a class="logo" href="http://www.stockspots.eu">
+                <img class="logoImg" src="img/logo.svg">
+            </a>
+            <div class="d-flex flex-row order-2 order-lg-3">
+                <div id="_lang_" class="dropdown">
+                    <button type="button" id="_lang_hreader_" class="btn_ bg-white dropdown-toggle" data-target=".dropdown-collapse" data-toggle="dropdown" style="border-width:1px">
+                        <img src="img/svg/netherlands.svg" width="20">
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a id="lng_nl" value="nl" class="dropdown-item" href="#"><img src="img/svg/netherlands.svg" width="20"></a></li>
+                        <li><a id="lng_en" value="en" class="dropdown-item" href="#"><img src="img/svg/united-kingdom.svg" width="20"></a></li>
+                        <li><a id="lng_fr" value="fr" class="dropdown-item" href="#"><img src="img/svg/france.svg" width="20"></a></li>
+                        <li><a id="lng_de" value="de" class="dropdown-item" href="#"><img src="img/svg/germany.svg" width="20"></a></li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto" style="padding-top:20px;">
+                    <li class="nav-item secMenu">
+                        <a href="mailto:info@stockspots.eu" style="color:gray;"><i class="material-icons">email</i></a>
+                    </li>
+                    <li class="nav-item secMenu">
+                        <a href="tel:+310765315389" style="color:gray;"><i class="material-icons">call</i></a>
+                    </li>
+                    <li class="nav-item secMenu">
+                        <a href="fRegister.html" style="color:gray;"><i class="material-icons">perm_identity</i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Title -->
+    <section id="oSectionTitle" class="container-fluid" style="display:none;">
+        <div class="row pageTitle">
+            <div class="row hidden-xs col-md-2 col-lg-2 col-xl-3" style="margin: 0px;padding:0px; max-height: fit-content;">
+            </div>
+            <div class="row col-md-8 col-lg-8 col-xl-6" style="margin: 0px;padding:10px; max-height: fit-content;">
+                <h2><span id="lbl_title" class="trn">Register</span></h2>
+            </div>
+            <div class="row hidden-xs col-md-2 col-lg-2 col-xl-3" style="margin: 0px;padding:0px; max-height: fit-content;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <section id="oSectionMain" class="container-fluid clearfix style="position: relative; display:none;padding-bottom:60px;">
+        <div class="row col-12" style="margin: 0px;padding:0px;">
+
+            <div class="row hidden-xs col-md-2 col-lg-2 col-xl-3" style="margin: 0px;padding:0px; max-height: fit-content;">
+            </div>
+            <div class="row col-md-8 col-lg-8 col-xl-6 s-shadow" style="margin: 0px;padding:10px; max-height: fit-content;">
+
+                <div class="form-group col-12">
+                    <div class="form-line" oFieldId="scn_FullName" oFieldType="TextInput" oFieldTitle="Your name"></div>
+                </div>
+
+                <div class="form-group col-12">
+                    <div class="form-line" oFieldId="scn_EmailAddress1" oFieldType="TextInput" oFieldTitle="Email"></div>
+                </div>
+
+                <div class="form-group col-12">
+                    <div class="form-line" oFieldId="sog_name" oFieldType="TextInput" oFieldTitle="Organization name"></div>
+                </div>
+
+                <div class="form-group col-12">
+                    <div class="form-line" oFieldId="scs_password" oFieldType="Password" oFieldTitle="Your desired password"></div>
+                </div>
+
+                <div class="form-group col-12">
+                    <div class="form-line" oFieldId="scs_password_confirmed" oFieldType="Password" oFieldTitle="Confirm password"></div>
+                </div>
+
+                <div id="oOffering" class="form-group col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-bottom:0px;display:none;">
+                    <div class="form-line" oFieldId="ind_offering" oFieldType="CheckBox" oFieldTitle="We are offering storage locations"></div>
+                </div>
+
+                <div id="oSeeking" class="form-group col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-bottom:15px;display:none;">
+                    <div class="form-line" oFieldId="ind_seeking" oFieldType="CheckBox" oFieldTitle="We are seeking storage locations" style="margin-top: 0px;"></div>
+                </div>
+                <div class="form-group col-md-12 col-sm-12 col-lg-6 col-xl-6" style="text-align: center">
+                    <button type="button" id="btn_register" class="k-button k-green">
+                        <span class="trn" style="color:#fff;">Continue</span>
+                    </button>
+                </div>
+                <div class="form-group col-md-12 col-sm-12 col-lg-6 col-xl-6" style="text-align: center">
+                    <button type="button" id="btn_back" class="k-button k-white">
+                        <span class="trn" style="color:gray;">Back</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row hidden-xs col-md-2 col-lg-2 col-xl-3" style="margin: 0px;padding:0px; max-height: fit-content;">
+            </div>
+        </div>
+    </section>
+
+    <!-- core bootstrap jquery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Telerik Kendo -->
+    <script src="js/kendo.all.min.js"></script>
+    <script src="js/jszip.min.js"></script>
+
+
+    <!-- Generated scripts -->
+    <script src="js/STD.js?v=20191017"></script>
+
+    <script type="text/javascript">
+    
+      // custom listener designed to be called at the end of building page elements
+      
+        $(document).on('mP_FinalizeLoading', function (e) {
+            // when everything is loaded
+        });
+
+      // js codes
+
+    </script>
+</body>
+</html>
