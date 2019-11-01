@@ -95,3 +95,6 @@ Or set some column in Kendo Grid editable
 
     oField_mSetGridColumnEditable(p_grid, p_column, p_column_name, p_column_name_mark, p_type = 'text')
     
+These libraries are working well and are in full swing, need further improvement, suggestions are welcome.
+Getting back to work 3, 2, 1
+
